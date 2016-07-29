@@ -1210,3 +1210,50 @@ hr {
     display: none !important;
   }
 }
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic);
+
+* {
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* PAGE-HEADER */
+
+.page-header {
+  box-shadow: 0 3px 5px rgba(215, 215, 215, 0.75);
+}
+
+.page-header-logo {
+  margin-left: 62px;
+  margin-top: 13px;
+}
+
+.page-header-menu {
+  margin-top: 20px;
+}
+
+.page-header-menu-list {
+  text-align: right;
+}
+
+.page-header-menu-item {
+  display: inline-block;
+  margin-left: 48px;
+}
+
+.page-header-menu-item a, .page-header-phone {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.page-header-menu-item a {
+  color: #ef5350;
+  text-transform: uppercase;
+}
+
+.page-header-phone {
+  padding: 20px 0 20px 20px;
+  display: block;
+  color: #212121;
+}
