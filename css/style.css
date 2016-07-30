@@ -1257,3 +1257,62 @@ hr {
   display: block;
   color: #212121;
 }
+
+/* PROMO */
+
+.promo {
+  text-align: center;
+  background-image: url(../img/promo-main-background.jpg);
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.promo-title {
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.promo-address {
+  margin-top: -5px;
+  position: relative;
+  font-size: 18px;
+}
+
+.promo-address:before {
+  content: '';
+  display: block;
+  height: 24px;
+  width: 18px;
+  margin: 0 auto;
+  position: absolute;
+  top: 74px;
+  left: 40%;
+  background-image: url(../img/promo-address-background.svg);
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+}
+
+.link-btn {
+  padding: 15px 60px;
+  border: 3px solid #ef5350;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* PROMO-MAIN */
+
+.promo-main {
+  padding: 220px 0 185px;
+  color: white;
+}
+
+.link-btn-main {
+  display: inline-block;
+  margin-top: 47px;
+  color: white;
+}
+
+
