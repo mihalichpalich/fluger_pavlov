@@ -1385,7 +1385,7 @@ hr {
 /* ROOMS-MAIN */
 
 .rooms-main {
-  padding-top: 88px;
+  padding: 88px 0;
 }
 
 .title-striped {
@@ -1464,4 +1464,32 @@ hr {
 
 .rooms-main .link-btn {
   margin: 45px 0 0 37px;
+}
+
+/* PHOTO-PREVIEW */
+
+.photo-preview .row:nth-child(-n+3):nth-child(n+2) {
+  margin-top: 25px;
+}
+
+.photo-preview-item:not(:nth-child(4n+1)) {
+  padding-left: 10px;
+}
+
+.photo-preview-item:not(:nth-child(4n)) {
+  padding-right: 10px;
+}
+
+.photo-preview-link {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.photo-preview-link-image {
+  width: 100%;
+}
+
+.photo-preview .link-btn {
+  margin: 45px 0 0 59px;
 }
