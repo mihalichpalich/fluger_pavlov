@@ -1296,7 +1296,9 @@ hr {
 
 .link-btn {
   padding: 15px 60px;
+  display: inline-block;
   border: 3px solid #ef5350;
+  color: #ef5350;
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
@@ -1310,7 +1312,6 @@ hr {
 }
 
 .link-btn-main {
-  display: inline-block;
   margin-top: 47px;
   color: white;
 }
@@ -1379,4 +1380,88 @@ hr {
   margin-top: 3px;
   color: #ffebee;
   line-height: 18px;
+}
+
+/* ROOMS-MAIN */
+
+.rooms-main {
+  padding-top: 88px;
+}
+
+.title-striped {
+  text-align: center;
+  color: #212121;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.title-striped:after {
+  content: "";
+  display: block;
+  width: 78px;
+  margin: 0 auto;
+  position: relative;
+  top: 10px;
+  border-bottom: 5px solid #ef5350;
+}
+
+.rooms-catalog {
+  margin-top: 30px;
+}
+
+.rooms-catalog .row {
+  margin-top: 20px;
+}
+
+.rooms-main-item:nth-child(odd) {
+  padding-right: 10px;
+}
+
+.rooms-main-item:nth-child(2n) {
+  padding-left: 10px;
+}
+
+.rooms-main-link {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+.rooms-main-information {
+  position: absolute;
+  top: 220px;
+  left: 185px;
+}
+
+.hotel-item-title {
+  color: #212121;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.rooms-catalog .row:nth-child(2) .hotel-item-title {
+  text-align: center;
+}
+
+.rooms-table td {
+  color: #212121;
+  font-size: 18px;
+}
+
+.rooms-table td:nth-child(2n) {
+  padding-left: 32px;
+}
+
+.rooms-table strong {
+  font-weight: 700;
+}
+
+.rooms-main-image {
+  width: 100%;
+}
+
+.rooms-main .link-btn {
+  margin: 45px 0 0 37px;
 }
