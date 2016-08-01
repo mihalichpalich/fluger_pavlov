@@ -1468,6 +1468,10 @@ hr {
 
 /* PHOTO-PREVIEW */
 
+.photo-preview {
+  margin-bottom: 100px;
+}
+
 .photo-preview .row:nth-child(-n+3):nth-child(n+2) {
   margin-top: 25px;
 }
@@ -1493,3 +1497,57 @@ hr {
 .photo-preview .link-btn {
   margin: 45px 0 0 59px;
 }
+
+/* OFFERS */
+
+.offers {
+  padding: 50px 0 60px;
+  background-color: #ef5350;
+}
+
+.offers-item {
+  padding-left: 108px;
+  position: relative;
+}
+
+.offers-item-internet:before,  .offers-item-safety:before, .offers-item-cooking:before, .offers-item-attic:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  left: 11%;
+  top: 6px;
+  background-image: url(../img/offers-sprite.png);
+  background-repeat: no-repeat;
+}
+
+.offers-item-internet:before {
+  width: 48px;
+  height: 48px;
+  background-position: -5px -63px;
+}
+
+.offers-item-safety:before {
+  width: 40px;
+  height: 48px;
+  left: 12%;
+  background-position: -63px -5px;
+}
+
+.offers-item-cooking:before {
+  width: 48px;
+  height: 48px;
+  background-position: -5px -5px;
+}
+
+.offers-item-attic:before {
+  width: 48px;
+  height: 48px;
+  background-position: -113px -5px;
+}
+
+.offers-description {
+  color: #ffcdd2;
+  line-height: 18px;
+}
+
