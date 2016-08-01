@@ -1551,3 +1551,65 @@ hr {
   line-height: 18px;
 }
 
+/* CONTACTS */
+
+.contacts {
+  padding: 70px 0 80px;
+}
+
+.contact-items {
+  margin-top: 50px;
+}
+
+.contacts-line {
+  padding-left: 40px;
+  position: relative;
+  color: #212121;
+  font-size: 18px;
+}
+
+.contacts-line-address:before,  .contacts-line-phone:before, .contacts-line-mail:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url(../img/contacts-sprite.png);
+  background-repeat: no-repeat;
+}
+
+.contacts-line-address:before {
+  width: 18px;
+  height: 24px;
+  left: 5px;
+  background-position: -39px -37px;
+}
+
+.contacts-line-phone:before {
+  width: 24px;
+  height: 24px;
+  background-position: -5px -5px;
+}
+
+.contacts-line-mail:before {
+  width: 24px;
+  height: 22px;
+  top: 2px;
+  background-position: -39px -5px;
+}
+
+.contacts-image {
+  width: 100%;
+  margin: 40px 0 47px;
+}
+
+.contacts .link-btn {
+  margin-left: 30px;
+}
+
+/* PAGE-FOOTER */
+
+.page-footer {
+  background-color: #ef5350;
+}
