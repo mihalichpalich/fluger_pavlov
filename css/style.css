@@ -1611,5 +1611,32 @@ hr {
 /* PAGE-FOOTER */
 
 .page-footer {
+  padding: 36px 0 44px;
   background-color: #ef5350;
+}
+
+.page-footer-menu-item {
+  display: inline-block;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.page-footer-menu-item:nth-child(-n+4):nth-child(n+3) {
+  margin-top: 10px;
+}
+
+.page-footer-menu-item-link {
+  margin-left: 60px;
+  color: white;
+  font-size: 18px;
+}
+
+.page-footer-address, .page-footer-contacts-link, .page-footer-copyright {
+  color: white;
+}
+
+.page-footer-contacts-item {
+  margin-top: 17px;
+  margin-left: 0;
 }
