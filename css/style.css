@@ -1330,6 +1330,13 @@ hr {
   background-image: url(../img/promo-rooms-background.jpg);
 }
 
+/* PROMO-PHOTO */
+
+.promo-photo {
+  padding: 242px 0 268px;
+  background-image: url(../img/promo-photo-background.jpg);
+}
+
 /* FEATURES */
 
 .features {
