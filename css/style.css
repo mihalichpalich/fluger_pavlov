@@ -1626,7 +1626,7 @@ hr {
   margin: 40px 0 47px;
 }
 
-.contacts .link-btn {
+.reserve-btn {
   margin-left: 30px;
 }
 
@@ -1730,4 +1730,34 @@ hr {
 
 .rooms-table-not-reserved {
   color: #90a4ae;
+}
+
+/* PHOTO-GALLERY */
+
+.photo-gallery {
+  padding-bottom: 81px;
+}
+
+.photo-gallery .hotel-item-title {
+  margin: 35px 0 6px;
+  color: #ef5350;
+}
+
+.photo-gallery .hotel-item-title:last-child {
+  margin-bottom: 18px;
+}
+
+.photo-gallery-subtitle {
+  color: #607d8b;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.photo-gallery-image {
+  display: inline-block;
+  margin: 0 3px 7px 0;
+}
+
+.photo-gallery .reserve-btn {
+  margin-top: 37px;
 }
