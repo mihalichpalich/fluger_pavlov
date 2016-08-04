@@ -1262,7 +1262,6 @@ hr {
 
 .promo {
   text-align: center;
-  background-image: url(../img/promo-main-background.jpg);
   -webkit-background-size: cover;
   background-size: cover;
 }
@@ -1270,13 +1269,17 @@ hr {
 .promo-title {
   font-size: 36px;
   font-weight: 700;
+  letter-spacing: 0.025em;
   text-transform: uppercase;
+  color: #ef5350;
 }
 
 .promo-address {
   margin-top: -5px;
+  padding-left: 17px;
   position: relative;
   font-size: 18px;
+  color: #212121;
 }
 
 .promo-address:before {
@@ -1284,11 +1287,10 @@ hr {
   display: block;
   height: 24px;
   width: 18px;
-  margin: 0 auto;
   position: absolute;
-  top: 74px;
-  left: 40%;
-  background-image: url(../img/promo-address-background.svg);
+  top: 1px;
+  left: 43px;
+  background-image: url(../img/promo-address-background.png);
   background-repeat: no-repeat;
   -webkit-background-size: 100%;
   background-size: 100%;
@@ -1309,6 +1311,11 @@ hr {
 .promo-main {
   padding: 220px 0 185px;
   color: white;
+  background-image: url(../img/promo-main-background.jpg);
+}
+
+.promo-title-main, .promo-address-main {
+  color: white;
 }
 
 .link-btn-main {
@@ -1316,6 +1323,12 @@ hr {
   color: white;
 }
 
+/* PROMO-ROOMS */
+
+.promo-rooms {
+  padding: 242px 0 268px;
+  background-image: url(../img/promo-rooms-background.jpg);
+}
 
 /* FEATURES */
 
@@ -1332,6 +1345,7 @@ hr {
 .bg-red-title {
   text-align: center;
   font-size: 24px;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
@@ -1393,6 +1407,7 @@ hr {
   color: #212121;
   font-size: 36px;
   font-weight: 700;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
@@ -1639,4 +1654,73 @@ hr {
 .page-footer-contacts-item {
   margin-top: 17px;
   margin-left: 0;
+}
+
+/* ROOMS-LIST */
+
+.rooms-list {
+  padding: 58px 0 30px;
+}
+
+.rooms-list .container > .row:nth-child(n+2) {
+  margin-top: 91px;
+}
+
+.rooms-list-item:first-child {
+  padding-right: 10px;
+}
+
+.rooms-list-item:last-child {
+  padding-left: 10px;
+}
+
+.rooms-list-image {
+  width: 100%;
+}
+
+.rooms-list .hotel-item-title {
+  color: #ef5350;
+}
+
+.rooms-list-benefit {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.rooms-list-benefit-available, .rooms-list-benefit-not-available {
+  margin-right: 7px;
+  display: inline-block;
+  width: 14px;
+  height: 10px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.rooms-list-benefit-available {
+  background: url(../img/rooms-list-benefit-available-background.png);
+}
+
+.rooms-list-benefit-not-available {
+  background: url(../img/rooms-list-benefit-not-available-background.png);
+}
+
+.rooms-list-benefit-item {
+  color: #607d8b;
+}
+
+.rooms-list-benefit-item-available {
+  color: #212121;
+}
+
+.rooms-list .rooms-table {
+  margin: 18px 0 31px;
+}
+
+.rooms-list .rooms-table strong {
+  text-transform: uppercase;
+}
+
+.rooms-table-not-reserved {
+  color: #90a4ae;
 }
