@@ -284,6 +284,7 @@ hr {
   cursor: pointer;
 }
 .container {
+  width: 320px;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -1287,9 +1288,10 @@ hr {
   display: block;
   height: 24px;
   width: 18px;
-  position: absolute;
-  top: 1px;
-  left: 43px;
+  margin: 0 auto;
+  position: relative;
+  top: 25px;
+  left: -40%;
   background-image: url(../img/promo-address-background.png);
   background-repeat: no-repeat;
   -webkit-background-size: 100%;
@@ -1347,6 +1349,7 @@ hr {
 .bg-red-title, .bg-red-name {
   color: white;
   font-weight: 700;
+  line-height: 1.1;
 }
 
 .bg-red-title {
@@ -1398,7 +1401,7 @@ hr {
 }
 
 .features-description {
-  margin-top: 3px;
+  margin-top: 8px;
   color: #ffebee;
   line-height: 18px;
 }
@@ -1552,7 +1555,7 @@ hr {
 .offers-item-safety:before {
   width: 40px;
   height: 48px;
-  left: 12%;
+  left: 13%;
   background-position: -63px -5px;
 }
 
@@ -1566,6 +1569,10 @@ hr {
   width: 48px;
   height: 48px;
   background-position: -113px -5px;
+}
+
+.offers-item .bg-red-name {
+  letter-spacing: 0.05em;
 }
 
 .offers-description {
@@ -1652,15 +1659,20 @@ hr {
   margin-left: 60px;
   color: white;
   font-size: 18px;
+  letter-spacing: 0.05em;
 }
 
-.page-footer-address, .page-footer-contacts-link, .page-footer-copyright {
+.page-footer-address, .page-footer-contacts-link, .page-footer-text-copyright {
   color: white;
 }
 
 .page-footer-contacts-item {
   margin-top: 17px;
   margin-left: 0;
+}
+
+.page-footer-text-copyright {
+  margin-top: 51px;
 }
 
 /* ROOMS-LIST */
@@ -1760,4 +1772,246 @@ hr {
 
 .photo-gallery .reserve-btn {
   margin-top: 37px;
+}
+
+@media (max-width: 1200px) {
+
+  /* PROMO-MAIN */
+
+  .promo-address:before {
+    left: -42%;
+  }
+
+  /* FEATURES */
+
+  .features-item {
+    padding-left: 0;
+    margin-top: 95px;
+  }
+
+  .features-item-center:before,  .features-item-sunset:before, .features-item-room:before {
+    left: 15px;
+    top: 36px;
+  }
+
+  .features-item-sunset:before {
+    top: 25px;
+  }
+
+  /* ROOMS-MAIN */
+
+  .rooms-main-information {
+    top: 105px;
+    left: 97px;
+  }
+
+  .rooms-main-information-lux {
+    left: 80px;
+  }
+
+  /* PHOTO-PREVIEW */
+
+  .photo-preview-item:nth-child(odd) {
+    padding: 0 26px 10px 0;
+  }
+
+  .photo-preview-item:nth-child(even) {
+    padding: 0 0 10px 26px;
+  }
+
+  .photo-preview .link-btn {
+    margin-left: 30px;
+  }
+
+  /* CONTACTS */
+
+  .contact-items {
+    margin-top: 25px;
+  }
+
+  .contacts-line-item {
+    padding-left: 201px;
+  }
+
+  .contacts-line {
+    display: block;
+    margin: 0 0 34px 26px;
+  }
+
+  .contacts-line-mail {
+    margin-bottom: 8px;
+  }
+
+  /* PAGE-FOOTER */
+
+  .page-footer-menu-item {
+    margin-bottom: 11px;
+  }
+
+  .page-footer-menu-item:nth-child(-n+4):nth-child(n+3), .page-footer-contacts-item {
+    margin-top: 0;
+  }
+
+  .page-footer-text-copyright {
+    margin-top: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* PAGE-HEADER */
+
+  .page-header-logo {
+    margin: 15px 0 11px 4px;
+  }
+
+  /* PROMO-MAIN */
+
+  .promo-main {
+    padding: 138px 0 94px;
+  }
+
+  .promo-title {
+    margin-bottom: 0;
+    font-size: 26px;
+  }
+
+  .promo-address {
+    margin-top: -14px;
+  }
+
+  .promo-address:before {
+    left: -50%;
+  }
+
+  .link-btn-main {
+    margin-top: 45px;
+  }
+
+  /* FEATURES */
+
+  .features {
+    padding: 45px 0 57px;
+  }
+
+  .features .bg-red-title {
+    font-size: 20px;
+  }
+
+  .features-item {
+    padding-left: 65px;
+    margin-top: 35px;
+  }
+
+  .features-item-center:before, .features-item-sunset:before, .features-item-room:before {
+    left: 15px;
+    top: 38px;
+  }
+
+  .features-item-sunset:before {
+    top: 35px;
+  }
+
+  /* ROOMS-MAIN */
+
+  .rooms-main {
+    padding: 33px 0 0;
+  }
+
+  .title-striped {
+    font-size: 26px;
+  }
+
+  .rooms-catalog .row {
+    margin-top: 0;
+  }
+
+  .rooms-main-item:not(first-child) {
+    margin-top: 9px;
+  }
+
+  .rooms-main-item:nth-child(odd), .rooms-main-item:nth-child(2n) {
+    padding: 0 3px;
+  }
+
+  .rooms-main-information {
+    top: 85px;
+    left: 77px;
+  }
+
+  .rooms-main-information-lux {
+    left: 60px;
+  }
+
+  .rooms-main .link-btn {
+    margin-left: 3px;
+  }
+
+  /* PHOTO-PREVIEW */
+
+  .photo-preview {
+    margin-bottom: 78px;
+  }
+
+  /* OFFERS */
+
+  .offers {
+    padding: 22px 0 19px;
+  }
+
+  .offers .bg-red-title {
+    line-height: 26px;
+  }
+
+  .offers-item {
+    padding-left: 65px;
+  }
+
+  .offers-item-internet:before, .offers-item-safety:before, .offers-item-cooking:before, .offers-item-attic:before {
+    left: 0;
+  }
+
+  .offers-item-safety:before {
+    left: 2%;
+  }
+
+  .offers-item-attic .offers-description {
+    padding-right: 47px;
+  }
+
+  /* CONTACTS */
+
+  .contacts {
+    padding: 30px 0 40px;
+  }
+
+  .contacts-line-item {
+    padding: 0;
+  }
+
+  .contacts-line-address:before, .contacts-line-phone:before, .contacts-line-mail:before {
+    left: -4px;
+  }
+
+  .contacts-line-address:before {
+    left: 0;
+  }
+
+  .contacts-image {
+    margin: 33px 0 41px;
+  }
+
+  .reserve-btn {
+    margin-left: 0;
+  }
+
+  /* PAGE-FOOTER */
+
+  .page-footer {
+    padding: 30px 0 36px;
+  }
+
+  .page-footer-address, .page-footer-contacts-item, .page-footer-text-copyright {
+    margin-left: 60px;
+  }
 }
