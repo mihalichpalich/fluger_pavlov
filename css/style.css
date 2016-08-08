@@ -79,6 +79,8 @@ sub {
 }
 img {
   border: 0;
+  max-width: 100%;
+  height: auto;
 }
 svg:not(:root) {
   overflow: hidden;
@@ -2090,5 +2092,20 @@ hr {
 
   .reserve-btn-rooms {
     margin-left: 9px;
+  }
+}
+
+@media (min-resolution: 3dppx) {
+
+  /* PROMO-MAIN */
+
+  .promo-main {
+    background-image: url(../img/promo-main-background-3dppx.jpg);
+  }
+
+  /* PROMO-ROOMS */
+
+  .promo-rooms {
+    background-image: url(../img/promo-rooms-background-3dppx.jpg);
   }
 }
