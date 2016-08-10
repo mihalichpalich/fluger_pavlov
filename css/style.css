@@ -1228,8 +1228,7 @@ hr {
 }
 
 .page-header-logo {
-  margin-left: 62px;
-  margin-top: 13px;
+  margin: 13px 0 0 62px;
 }
 
 .page-header-menu {
@@ -1255,9 +1254,128 @@ hr {
   text-transform: uppercase;
 }
 
-.page-header-phone {
-  padding: 20px 0 20px 20px;
+.toggler {
+  background-color: #ef5350;
+  height: 64px;
+  width: 68px;
+  text-align: center;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.36);
+}
+
+#toggler {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.show {
   display: block;
+  position: absolute;
+  width: 100%;
+}
+
+.toggler > span {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 18px;
+  height: 2px;
+  background: #fff;
+  border-radius: 4px;
+  position: relative;
+  top: 19%;
+}
+
+.toggler > span:before,
+.toggler > span:after {
+  width: 18px;
+  height: 2px;
+  background: #fff;
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  content: '';
+}
+
+.toggler > span:before {
+  top: -4px;
+}
+
+.toggler > span:after {
+  top: 4px;
+}
+
+#toggler {
+  overflow: hidden;
+  float: right;
+}
+
+.toggler--close > span {
+  transition: background .3s 0;
+  background: transparent;
+}
+
+.toggler--close:before,
+.toggler--close:after {
+  transition: top .3s, transform .3s .5s;
+}
+
+.toggler--close > span:before, .toggler--close > span:after {
+  height: 3px;
+  left: 0;
+  top: 0;
+}
+
+.toggler--close > span:before {
+  transform: rotate3d(0, 0, 1, 45deg);
+}
+
+.toggler--close > span:after {
+  transform: rotate3d(0, 0, 1, -45deg);
+}
+
+.nav {
+   font-size: 0;
+   display: none;
+}
+
+.nav--visible {
+  display: block;
+  padding-left: 0;
+  width: 59%;
+  position: absolute;
+  left: 41%;
+  z-index: 1;
+  background-color: #000;
+  margin-top: 64px;
+  margin-bottom: 0;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.36);
+}
+
+.nav--visible li{
+  display: block;
+  font-size: 20px;
+  padding-bottom: 48px;
+}
+
+.nav--visible li:first-child {
+  padding-top: 48px;
+}
+
+.nav--visible li a{
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.page-header-phone {
+  padding: 20px 0 20px 35px;
+  display: block;
+  color: #212121;
+}
+
+.page-header-phone a {
   color: #212121;
 }
 
@@ -1452,6 +1570,9 @@ hr {
 }
 
 .rooms-main-link {
+  margin: 0 auto;
+  height: 460px;
+  width: 460px;
   display: block;
   width: 100%;
   position: relative;
@@ -1790,6 +1911,25 @@ hr {
 
 @media (max-width: 1200px) {
 
+  /* PAGE-HEADER */
+
+  .page-header-logo {
+    margin-bottom: 9px;
+    position: relative;
+    left: -37px;
+  }
+
+  .toggler {
+    height: 64px;
+    width: 68px;
+  }
+
+  .page-header-phone {
+    position: absolute;
+    right: -40px;
+    top: 1px;
+  }
+
   /* PROMO-MAIN */
 
   .promo-title {
@@ -1900,7 +2040,26 @@ hr {
   /* PAGE-HEADER */
 
   .page-header-logo {
-    margin: 15px 0 11px 4px;
+    margin: 13px 0 9px 4px;
+    position: relative;
+    left: 0px;
+  }
+
+  .nav--visible {
+    width: 93%;
+    left: 9%;
+  }
+
+  .nav--visible li {
+    padding-bottom: 46px;
+  }
+
+  .nav--visible li:first-child {
+    padding-top: 46px;
+  }
+
+  .page-header-menu-item {
+    margin-left: 43px;
   }
 
   /* PROMO-MAIN */
