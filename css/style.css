@@ -1803,9 +1803,10 @@ hr {
   background-position: -39px -5px;
 }
 
-.contacts-image {
+#map {
   width: 100%;
-  margin: 40px 0 47px;
+  height: 446px;
+  margin: 35px 0 47px;
 }
 
 .reserve-btn {
@@ -2285,6 +2286,7 @@ hr {
 
   .offers-item-internet:before, .offers-item-safety:before, .offers-item-cooking:before, .offers-item-attic:before {
     left: 0;
+    top: 2px;
   }
 
   .offers-item-safety:before {
@@ -2313,8 +2315,9 @@ hr {
     left: 0;
   }
 
-  .contacts-image {
-    margin: 33px 0 41px;
+  #map {
+    height: 337px;
+    margin: 39px 0 41px;
   }
 
   .reserve-btn {
