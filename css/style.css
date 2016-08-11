@@ -1686,6 +1686,10 @@ hr {
   width: 100%;
 }
 
+.photo-preview-link:hover {
+  width: 101%;
+}
+
 .photo-preview-link-image {
   width: 100%;
 }
@@ -2011,24 +2015,46 @@ hr {
     margin-top: 95px;
   }
 
+  .features-item-center {
+    margin-left: 34px;
+  }
+
+  .features-item-sunset {
+    margin-left: -25px;
+  }
+
   .features-item-center:before,  .features-item-sunset:before, .features-item-room:before {
     left: 15px;
     top: 36px;
   }
 
+  .features-item-center::before {
+    left: 49px;
+  }
+
   .features-item-sunset:before {
     top: 25px;
+    left: -9px;
   }
 
   /* ROOMS-MAIN */
 
+  .rooms-main-item:nth-child(2n+1) {
+    padding-left: 49px;
+  }
+
+  .rooms-main-link {
+    max-width: 311px;
+  }
+
   .rooms-main-information {
-    top: 105px;
-    left: 97px;
+    top: 78px;
+    left: 72px;
   }
 
   .rooms-main-information-lux {
-    left: 80px;
+    left: 63px;
+    top: 75px;
   }
 
   /* PHOTO-PREVIEW */
@@ -2183,6 +2209,14 @@ hr {
   .features-item {
     padding-left: 65px;
     margin-top: 35px;
+  }
+
+  .features-item-center {
+    margin-left: 0;
+  }
+
+  .features-item-sunset {
+    margin-left: 0px;
   }
 
   .features-item-center:before, .features-item-sunset:before, .features-item-room:before {
