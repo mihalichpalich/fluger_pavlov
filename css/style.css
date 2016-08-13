@@ -1334,11 +1334,11 @@ hr {
 }
 
 .toggler--close > span:before {
-  transform: rotate3d(0, 0, 1, 45deg);
+  transform: rotate3d(0, 0, 1, 51deg);
 }
 
 .toggler--close > span:after {
-  transform: rotate3d(0, 0, 1, -45deg);
+  transform: rotate3d(0, 0, 1, -51deg);
 }
 
 .nav {
@@ -2511,5 +2511,11 @@ hr {
 
   .promo-rooms {
     background-image: url(../img/promo-rooms-background-3dppx.jpg);
+  }
+
+  /* PROMO-PHOTO */
+
+  .promo-photo {
+    background-image: url(../img/promo-photo-background-3dppx.jpg);
   }
 }
