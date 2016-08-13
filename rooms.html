@@ -7,6 +7,7 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link href="css/lightbox.css" rel="stylesheet">
 </head>
 <body>
 
@@ -18,15 +19,17 @@
       <div class="row">
 
         <div class="col-xs-6 col-sm-3">
-          <img src="img/logo.png" class="page-header-logo" alt="Логотип">
+          <a href="index.html" class="">
+            <img src="img/logo.png" class="page-header-logo" alt="Логотип">
+          </a>
         </div>
 
         <div class="hidden-xs hidden-sm col-lg-6 pull-left">
           <nav class="page-header-menu">
             <ul class="page-header-menu-list">
-              <li class="page-header-menu-item"><a href="rooms.html">Номера</a></li>
+              <li class="page-header-menu-item page-header-menu-item-active"><a href="rooms.html">Номера</a></li>
               <li class="page-header-menu-item"><a href="photo.html">Фото</a></li>
-              <li class="page-header-menu-item"><a href="">Гостям</a></li>
+              <li class="page-header-menu-item"><a href="#">Гостям</a></li>
               <li class="page-header-menu-item"><a href="#">Забронировать</a></li>
             </ul>
           </nav>
@@ -36,10 +39,10 @@
           <a href="tel:79991050525">+7 999 105-05-25</a>
         </div>
 
-        <a href="" class="hidden-lg toggler" id="toggler"><span></span></a>
+        <a href="#" class="hidden-lg toggler" id="toggler"><span></span></a>
           <ul class="hidden-lg nav" id="nav">
             <li class="page-header-menu-item"><a href="rooms.html">Номера</a></li>
-            <li class="page-header-menu-item"><a href="#">Фото</a></li>
+            <li class="page-header-menu-item"><a href="photo.html">Фото</a></li>
             <li class="page-header-menu-item"><a href="#">Гостям</a></li>
             <li class="page-header-menu-item"><a href="#">Забронировать</a></li>
           </ul>
@@ -344,82 +347,80 @@
     <!-- /* PHOTO-PREVIEW */ -->
 
     <article class="photo-preview">
-      <div class="photo-preview-rooms">
-        <div class="container-fluid hidden-xs">
+      <div class="container-fluid hidden-xs">
 
-          <div class="row">
+        <div class="row">
 
-            <div class="col-sm-6 col-sm-offset-3 col-lg-4 col-lg-offset-4">
-              <h2 class="title-striped">Фото хостела</h2>
-            </div>
-
-          </div>
-
-          <div class="row">
-
-            <div class="col-sm-6 col-lg-3 photo-preview-item">
-              <a href="#" class="photo-preview-link">
-                <img src="img/photo-preview-link-image-1.jpg" alt="Фото1" class="photo-preview-link-image">
-              </a>
-            </div>
-
-            <div class="col-sm-6 col-lg-3 photo-preview-item">
-              <a href="#" class="photo-preview-link">
-                <img src="img/photo-preview-link-image-2.jpg" alt="Фото2" class="photo-preview-link-image">
-              </a>
-            </div>
-
-            <div class="col-sm-6 col-lg-3 photo-preview-item">
-              <a href="#" class="photo-preview-link">
-                <img src="img/photo-preview-link-image-3.jpg" alt="Фото3" class="photo-preview-link-image">
-              </a>
-            </div>
-
-            <div class="col-sm-6 col-lg-3 photo-preview-item">
-              <a href="#" class="photo-preview-link">
-                <img src="img/photo-preview-link-image-4.jpg" alt="Фото4" class="photo-preview-link-image">
-              </a>
-            </div>
-
-          </div>
-
-          <div class="row hidden-sm">
-
-            <div class="col-lg-3 photo-preview-item">
-              <a href="#" class="photo-preview-link">
-                <img src="img/photo-preview-link-image-1.jpg" alt="Фото5" class="photo-preview-link-image">
-              </a>
-            </div>
-
-            <div class="col-lg-3 photo-preview-item">
-              <a href="#" class="photo-preview-link">
-                <img src="img/photo-preview-link-image-2.jpg" alt="Фото6" class="photo-preview-link-image">
-              </a>
-            </div>
-
-            <div class="col-lg-3 photo-preview-item">
-              <a href="#" class="photo-preview-link">
-                <img src="img/photo-preview-link-image-3.jpg" alt="Фото7" class="photo-preview-link-image">
-              </a>
-            </div>
-
-            <div class="col-lg-3 photo-preview-item">
-              <a href="#" class="photo-preview-link">
-                <img src="img/photo-preview-link-image-4.jpg" alt="Фото8" class="photo-preview-link-image">
-              </a>
-            </div>
-
-          </div>
-
-          <div class="row">
-
-            <div class="col-sm-6 col-sm-offset-3 col-lg-4 col-lg-offset-4">
-              <a href="#" class="link-btn">Все фотографии</a>
-            </div>
-
+          <div class="col-sm-6 col-sm-offset-3 col-lg-4 col-lg-offset-4">
+            <h2 class="title-striped">Фото хостела</h2>
           </div>
 
         </div>
+
+        <div class="row">
+
+          <div class="col-sm-6 col-lg-3 photo-preview-item">
+            <a href="img/photo-preview-link-image-1.jpg" class="photo-preview-link" data-lightbox="image-1" data-title="Фото1">
+              <img src="img/photo-preview-link-image-1.jpg" alt="Фото1" class="photo-preview-link-image">
+            </a>
+          </div>
+
+          <div class="col-sm-6 col-lg-3 photo-preview-item">
+            <a href="img/photo-preview-link-image-2.jpg" class="photo-preview-link" data-lightbox="image-2" data-title="Фото2">
+              <img src="img/photo-preview-link-image-2.jpg" alt="Фото2" class="photo-preview-link-image">
+            </a>
+          </div>
+
+          <div class="col-sm-6 col-lg-3 photo-preview-item">
+            <a href="img/photo-preview-link-image-3.jpg" class="photo-preview-link" data-lightbox="image-3" data-title="Фото3">
+              <img src="img/photo-preview-link-image-3.jpg" alt="Фото3" class="photo-preview-link-image">
+            </a>
+          </div>
+
+          <div class="col-sm-6 col-lg-3 photo-preview-item">
+            <a href="img/photo-preview-link-image-4.jpg" class="photo-preview-link" data-lightbox="image-4" data-title="Фото4">
+              <img src="img/photo-preview-link-image-4.jpg" alt="Фото4" class="photo-preview-link-image">
+            </a>
+          </div>
+
+        </div>
+
+        <div class="row hidden-sm">
+
+          <div class="col-lg-3 photo-preview-item">
+            <a href="img/photo-preview-link-image-1.jpg" class="photo-preview-link" data-lightbox="image-5" data-title="Фото5">
+              <img src="img/photo-preview-link-image-1.jpg" alt="Фото5" class="photo-preview-link-image">
+            </a>
+          </div>
+
+          <div class="col-lg-3 photo-preview-item">
+            <a href="img/photo-preview-link-image-2.jpg" class="photo-preview-link" data-lightbox="image-6" data-title="Фото6">
+              <img src="img/photo-preview-link-image-2.jpg" alt="Фото6" class="photo-preview-link-image">
+            </a>
+          </div>
+
+          <div class="col-lg-3 photo-preview-item">
+            <a href="img/photo-preview-link-image-3.jpg" class="photo-preview-link" data-lightbox="image-7" data-title="Фото7">
+              <img src="img/photo-preview-link-image-3.jpg" alt="Фото7" class="photo-preview-link-image">
+            </a>
+          </div>
+
+          <div class="col-lg-3 photo-preview-item">
+            <a href="img/photo-preview-link-image-4.jpg" class="photo-preview-link" data-lightbox="image-8" data-title="Фото8">
+              <img src="img/photo-preview-link-image-4.jpg" alt="Фото8" class="photo-preview-link-image">
+            </a>
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col-sm-6 col-sm-offset-3 col-lg-4 col-lg-offset-4">
+            <a href="#" class="link-btn">Все фотографии</a>
+          </div>
+
+        </div>
+
       </div>
     </article>
 
@@ -438,7 +439,7 @@
 
             <ul>
               <li class="col-xs-12  col-lg-6 page-footer-menu-item">
-                <a class="page-footer-menu-item-link" href="rooms.html">Номера</a>
+                <a class="page-footer-menu-item-link page-footer-menu-item-link-active" href="rooms.html">Номера</a>
               </li>
               <li class="col-xs-12  col-lg-6  col-lg-pull-2 page-footer-menu-item">
                 <a class="page-footer-menu-item-link" href="#">Гостям</a>
@@ -491,6 +492,7 @@
 
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/lightbox.min.js"></script>
   <script src="js/live.js"></script>
 
 </body>

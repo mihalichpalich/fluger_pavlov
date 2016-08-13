@@ -7,6 +7,7 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link href="css/lightbox.css" rel="stylesheet">
 </head>
 <body>
 
@@ -18,15 +19,17 @@
       <div class="row">
 
         <div class="col-xs-6 col-sm-3">
-          <img src="img/logo.png" class="page-header-logo" alt="Логотип">
+          <a href="index.html" class="">
+            <img src="img/logo.png" class="page-header-logo" alt="Логотип">
+          </a>
         </div>
 
         <div class="hidden-xs hidden-sm col-lg-6 pull-left">
           <nav class="page-header-menu">
             <ul class="page-header-menu-list">
               <li class="page-header-menu-item"><a href="rooms.html">Номера</a></li>
-              <li class="page-header-menu-item"><a href="photo.html">Фото</a></li>
-              <li class="page-header-menu-item"><a href="">Гостям</a></li>
+              <li class="page-header-menu-item page-header-menu-item-active"><a href="photo.html">Фото</a></li>
+              <li class="page-header-menu-item"><a href="#">Гостям</a></li>
               <li class="page-header-menu-item"><a href="#">Забронировать</a></li>
             </ul>
           </nav>
@@ -36,10 +39,10 @@
           <a href="tel:79991050525">+7 999 105-05-25</a>
         </div>
 
-        <a href="" class="hidden-lg toggler" id="toggler"><span></span></a>
+        <a href="#" class="hidden-lg toggler" id="toggler"><span></span></a>
           <ul class="hidden-lg nav" id="nav">
             <li class="page-header-menu-item"><a href="rooms.html">Номера</a></li>
-            <li class="page-header-menu-item"><a href="#">Фото</a></li>
+            <li class="page-header-menu-item"><a href="photo.html">Фото</a></li>
             <li class="page-header-menu-item"><a href="#">Гостям</a></li>
             <li class="page-header-menu-item"><a href="#">Забронировать</a></li>
           </ul>
@@ -96,15 +99,33 @@
 
         </div>
 
-        <img class="photo-gallery-image" src="img/photo-first-floor-hall-image1.jpg" alt="Лестница">
-        <img class="photo-gallery-image" src="img/photo-first-floor-hall-image2.jpg" alt="Кабинет">
-        <img class="photo-gallery-image" src="img/photo-first-floor-hall-image3.jpg" alt="Полка">
-        <img class="photo-gallery-image" src="img/photo-first-floor-hall-image4.jpg" alt="Холл">
-        <img class="photo-gallery-image" src="img/photo-first-floor-hall-image5.jpg" alt="Холл"><br>
-        <img class="photo-gallery-image" src="img/photo-first-floor-hall-image6.jpg" alt="Стеллаж">
-        <img class="photo-gallery-image" src="img/photo-first-floor-hall-image7.jpg" alt="Кабинет">
-        <img class="photo-gallery-image" src="img/photo-first-floor-hall-image8.jpg" alt="Гостиная">
-        <img class="photo-gallery-image" src="img/photo-first-floor-hall-image9.jpg" alt="Сейф">
+        <a href="img/photo-first-floor-hall-image1.jpg" class="photo-gallery-link" data-lightbox="image-1" data-title="Лестница">
+          <img class="photo-gallery-image" src="img/photo-first-floor-hall-image1.jpg" alt="Лестница">
+        </a>
+        <a href="img/photo-first-floor-hall-image2.jpg" class="photo-gallery-link" data-lightbox="image-2" data-title="Кабинет">
+          <img class="photo-gallery-image" src="img/photo-first-floor-hall-image2.jpg" alt="Кабинет">
+        </a>
+        <a href="img/photo-first-floor-hall-image3.jpg" class="photo-gallery-link" data-lightbox="image-3" data-title="Полка">
+          <img class="photo-gallery-image" src="img/photo-first-floor-hall-image3.jpg" alt="Полка">
+        </a>
+        <a href="img/photo-first-floor-hall-image4.jpg" class="photo-gallery-link" data-lightbox="image-4" data-title="Холл">
+          <img class="photo-gallery-image" src="img/photo-first-floor-hall-image4.jpg" alt="Холл">
+        </a>
+        <a href="img/photo-first-floor-hall-image5.jpg" class="photo-gallery-link" data-lightbox="image-5" data-title="Холл">
+          <img class="photo-gallery-image" src="img/photo-first-floor-hall-image5.jpg" alt="Холл">
+        </a><br>
+        <a href="img/photo-first-floor-hall-image6.jpg" class="photo-gallery-link" data-lightbox="image-6" data-title="Стеллаж">
+          <img class="photo-gallery-image" src="img/photo-first-floor-hall-image6.jpg" alt="Стеллаж">
+        </a>
+        <a href="img/photo-first-floor-hall-image7.jpg" class="photo-gallery-link" data-lightbox="image-7" data-title="Кабинет">
+          <img class="photo-gallery-image" src="img/photo-first-floor-hall-image7.jpg" alt="Кабинет">
+        </a>
+        <a href="img/photo-first-floor-hall-image8.jpg" class="photo-gallery-link" data-lightbox="image-8" data-title="Гостиная">
+          <img class="photo-gallery-image" src="img/photo-first-floor-hall-image8.jpg" alt="Гостиная">
+        </a>
+        <a href="img/photo-first-floor-hall-image9.jpg" class="photo-gallery-link" data-lightbox="image-9" data-title="Сейф">
+          <img class="photo-gallery-image" src="img/photo-first-floor-hall-image9.jpg" alt="Сейф">
+        </a>
 
         <div class="row">
 
@@ -114,11 +135,21 @@
 
         </div>
 
-        <img class="photo-gallery-image" src="img/photo-first-floor-kitchen-image1.jpg" alt="Угол">
-        <img class="photo-gallery-image" src="img/photo-first-floor-kitchen-image2.jpg" alt="Раковина">
-        <img class="photo-gallery-image" src="img/photo-first-floor-kitchen-image3.jpg" alt="Шкаф">
-        <img class="photo-gallery-image" src="img/photo-first-floor-kitchen-image4.jpg" alt="Дверь">
-        <img class="photo-gallery-image" src="img/photo-first-floor-kitchen-image5.jpg" alt="Полки">
+        <a href="img/photo-first-floor-kitchen-image1.jpg" class="photo-gallery-link" data-lightbox="image-10" data-title="Угол">
+          <img class="photo-gallery-image" src="img/photo-first-floor-kitchen-image1.jpg" alt="Угол">
+        </a>
+        <a href="img/photo-first-floor-kitchen-image2.jpg" class="photo-gallery-link" data-lightbox="image-11" data-title="Раковина">
+          <img class="photo-gallery-image" src="img/photo-first-floor-kitchen-image2.jpg" alt="Раковина">
+        </a>
+        <a href="img/photo-first-floor-kitchen-image3.jpg" class="photo-gallery-link" data-lightbox="image-12" data-title="Шкаф">
+          <img class="photo-gallery-image" src="img/photo-first-floor-kitchen-image3.jpg" alt="Шкаф">
+        </a>
+        <a href="img/photo-first-floor-kitchen-image4.jpg" class="photo-gallery-link" data-lightbox="image-13" data-title="Дверь">
+          <img class="photo-gallery-image" src="img/photo-first-floor-kitchen-image4.jpg" alt="Дверь">
+        </a>
+        <a href="img/photo-first-floor-kitchen-image5.jpg" class="photo-gallery-link" data-lightbox="image-14" data-title="Полки">
+          <img class="photo-gallery-image" src="img/photo-first-floor-kitchen-image5.jpg" alt="Полки">
+        </a>
 
         <div class="row">
 
@@ -128,10 +159,18 @@
 
         </div>
 
-        <img class="photo-gallery-image" src="img/photo-first-floor-bathroom-image1.jpg" alt="Раковины">
-        <img class="photo-gallery-image" src="img/photo-first-floor-bathroom-image2.jpg" alt="Унитаз">
-        <img class="photo-gallery-image" src="img/photo-first-floor-bathroom-image3.jpg" alt="Кабины">
-        <img class="photo-gallery-image" src="img/photo-first-floor-bathroom-image4.jpg" alt="Душ">
+        <a href="img/photo-first-floor-bathroom-image1.jpg" class="photo-gallery-link" data-lightbox="image-15" data-title="Раковины">
+          <img class="photo-gallery-image" src="img/photo-first-floor-bathroom-image1.jpg" alt="Раковины">
+        </a>
+        <a href="img/photo-first-floor-bathroom-image2.jpg" class="photo-gallery-link" data-lightbox="image-16" data-title="Унитаз">
+          <img class="photo-gallery-image" src="img/photo-first-floor-bathroom-image2.jpg" alt="Унитаз">
+        </a>
+        <a href="img/photo-first-floor-bathroom-image3.jpg" class="photo-gallery-link" data-lightbox="image-17" data-title="Кабины">
+          <img class="photo-gallery-image" src="img/photo-first-floor-bathroom-image3.jpg" alt="Кабины">
+        </a>
+        <a href="img/photo-first-floor-bathroom-image4.jpg" class="photo-gallery-link" data-lightbox="image-18" data-title="Душ">
+          <img class="photo-gallery-image" src="img/photo-first-floor-bathroom-image4.jpg" alt="Душ">
+        </a>
 
         <div class="row">
 
@@ -149,8 +188,12 @@
 
         </div>
 
-        <img class="photo-gallery-image" src="img/photo-second-floor-twelve-image1.jpg" alt="Кровати">
-        <img class="photo-gallery-image" src="img/photo-second-floor-twelve-image2.jpg" alt="Подушки">
+        <a href="img/photo-second-floor-twelve-image1.jpg" class="photo-gallery-link" data-lightbox="image-19" data-title="Кровати">
+          <img class="photo-gallery-image" src="img/photo-second-floor-twelve-image1.jpg" alt="Кровати">
+        </a>
+        <a href="img/photo-second-floor-twelve-image2.jpg" class="photo-gallery-link" data-lightbox="image-20" data-title="Подушки">
+          <img class="photo-gallery-image" src="img/photo-second-floor-twelve-image2.jpg" alt="Подушки">
+        </a>
 
         <div class="row">
 
@@ -160,10 +203,18 @@
 
         </div>
 
-        <img class="photo-gallery-image" src="img/photo-second-floor-six-image1.jpg" alt="Кровати">
-        <img class="photo-gallery-image" src="img/photo-second-floor-six-image2.jpg" alt="Окно">
-        <img class="photo-gallery-image" src="img/photo-second-floor-six-image3.jpg" alt="Кровати">
-        <img class="photo-gallery-image" src="img/photo-second-floor-six-image4.jpg" alt="Полки">
+        <a href="img/photo-second-floor-six-image1.jpg" class="photo-gallery-link" data-lightbox="image-21" data-title="Кровати">
+          <img class="photo-gallery-image" src="img/photo-second-floor-six-image1.jpg" alt="Кровати">
+        </a>
+        <a href="img/photo-second-floor-six-image2.jpg" class="photo-gallery-link" data-lightbox="image-22" data-title="Окно">
+          <img class="photo-gallery-image" src="img/photo-second-floor-six-image2.jpg" alt="Окно">
+        </a>
+        <a href="img/photo-second-floor-six-image3.jpg" class="photo-gallery-link" data-lightbox="image-23" data-title="Кровати">
+          <img class="photo-gallery-image" src="img/photo-second-floor-six-image3.jpg" alt="Кровати">
+        </a>
+        <a href="img/photo-second-floor-six-image4.jpg" class="photo-gallery-link" data-lightbox="image-24" data-title="Полки">
+          <img class="photo-gallery-image" src="img/photo-second-floor-six-image4.jpg" alt="Полки">
+        </a>
 
         <div class="row">
 
@@ -173,9 +224,15 @@
 
         </div>
 
-        <img class="photo-gallery-image" src="img/photo-second-floor-two-image1.jpg" alt="Кровать">
-        <img class="photo-gallery-image" src="img/photo-second-floor-two-image2.jpg" alt="Туалет">
-        <img class="photo-gallery-image" src="img/photo-second-floor-two-image3.jpg" alt="Душ">
+        <a href="img/photo-second-floor-two-image1.jpg" class="photo-gallery-link" data-lightbox="image-25" data-title="Кровать">
+          <img class="photo-gallery-image" src="img/photo-second-floor-two-image1.jpg" alt="Кровать">
+        </a>
+        <a href="img/photo-second-floor-two-image2.jpg" class="photo-gallery-link" data-lightbox="image-26" data-title="Туалет">
+          <img class="photo-gallery-image" src="img/photo-second-floor-two-image2.jpg" alt="Туалет">
+        </a>
+        <a href="img/photo-second-floor-two-image3.jpg" class="photo-gallery-link" data-lightbox="image-27" data-title="Душ">
+          <img class="photo-gallery-image" src="img/photo-second-floor-two-image3.jpg" alt="Душ">
+        </a>
 
         <div class="row">
 
@@ -185,10 +242,18 @@
 
         </div>
 
-        <img class="photo-gallery-image" src="img/photo-second-floor-lux-image1.jpg" alt="Кровать">
-        <img class="photo-gallery-image" src="img/photo-second-floor-lux-image2.jpg" alt="Ванная">
-        <img class="photo-gallery-image" src="img/photo-second-floor-lux-image3.jpg" alt="Окна">
-        <img class="photo-gallery-image" src="img/photo-second-floor-lux-image4.jpg" alt="Весь номер">
+        <a href="img/photo-second-floor-lux-image1.jpg" class="photo-gallery-link" data-lightbox="image-28" data-title="Кровать">
+          <img class="photo-gallery-image" src="img/photo-second-floor-lux-image1.jpg" alt="Кровать">
+        </a>
+        <a href="img/photo-second-floor-lux-image2.jpg" class="photo-gallery-link" data-lightbox="image-29" data-title="Ванная">
+          <img class="photo-gallery-image" src="img/photo-second-floor-lux-image2.jpg" alt="Ванная">
+        </a>
+        <a href="img/photo-second-floor-lux-image3.jpg" class="photo-gallery-link" data-lightbox="image-29" data-title="Окна">
+          <img class="photo-gallery-image" src="img/photo-second-floor-lux-image3.jpg" alt="Окна">
+        </a>
+        <a href="img/photo-second-floor-lux-image4.jpg" class="photo-gallery-link" data-lightbox="image-29" data-title="Весь номер">
+          <img class="photo-gallery-image" src="img/photo-second-floor-lux-image4.jpg" alt="Весь номер">
+        </a>
 
         <div class="row">
 
@@ -198,10 +263,18 @@
 
         </div>
 
-        <img class="photo-gallery-image" src="img/photo-roof-image1.jpg" alt="Мансарда">
-        <img class="photo-gallery-image" src="img/photo-roof-image2.jpg" alt="Вид с крыши">
-        <img class="photo-gallery-image" src="img/photo-roof-image3.jpg" alt="Вид с крыши">
-        <img class="photo-gallery-image" src="img/photo-roof-image4.jpg" alt="Вид с крыши">
+        <a href="img/photo-roof-image1.jpg" class="photo-gallery-link" data-lightbox="image-30" data-title="Мансарда">
+          <img class="photo-gallery-image" src="img/photo-roof-image1.jpg" alt="Мансарда">
+        </a>
+        <a href="img/photo-roof-image2.jpg" class="photo-gallery-link" data-lightbox="image-31" data-title="Вид с крыши">
+          <img class="photo-gallery-image" src="img/photo-roof-image2.jpg" alt="Вид с крыши">
+        </a>
+        <a href="img/photo-roof-image3.jpg" class="photo-gallery-link" data-lightbox="image-31" data-title="Вид с крыши">
+          <img class="photo-gallery-image" src="img/photo-roof-image3.jpg" alt="Вид с крыши">
+        </a>
+        <a href="img/photo-roof-image4.jpg" class="photo-gallery-link" data-lightbox="image-31" data-title="Вид с крыши">
+          <img class="photo-gallery-image" src="img/photo-roof-image4.jpg" alt="Вид с крыши">
+        </a>
 
         <div class="row">
 
@@ -235,7 +308,7 @@
                 <a class="page-footer-menu-item-link" href="#">Гостям</a>
               </li>
               <li class="col-xs-12  col-lg-6 page-footer-menu-item">
-                <a class="page-footer-menu-item-link" href="photo.html">Фото</a>
+                <a class="page-footer-menu-item-link page-footer-menu-item-link-active" href="photo.html">Фото</a>
               </li>
               <li class="col-xs-12  col-lg-6  col-lg-pull-2 page-footer-menu-item">
                 <a class="page-footer-menu-item-link" href="#">Забронировать</a>
@@ -282,6 +355,7 @@
 
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/lightbox.min.js"></script>
   <script src="js/live.js"></script>
 
 </body>
