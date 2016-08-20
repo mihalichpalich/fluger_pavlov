@@ -7,42 +7,37 @@ toggler.onclick = function(e){
   document.getElementById('nav').classList.toggle('nav--visible');
 };
 
+});
 
-// Карта
+// GoogleMap
+function initMap() {
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 13,
+    center: {lat: 59.93222, lng: 30.324154},
+    scrollwheel: false
+  });
 
-  var points = [
-  // Найти координаты: http://www.mapcoordinates.net/ru
-  {lat: 59.932, lng: 30.324}
+  setMarkers(map);
+}
+
+var points = [
+  ['Fluger', 59.93222, 30.324154],
 ];
 
-$.ajax({
-  url: 'https://maps.googleapis.com/maps/api/js',
-    dataType: 'jsonp',
-  jsonp: 'callback',
-  data: {
-    // АХТУНГ! Это МОЙ ключ! Заведите свой!
-    key: 'AIzaSyADy7FRsZvBvHydrA49XsT48wFIB5XyrzY',
-    signed_in: true
-  },
-  success: mapInit
-});
+function setMarkers(map) {
+  var image = {
+    url: 'img/contacts-icon-map.png',
+    size: new google.maps.Size(86, 26),
+    anchor: new google.maps.Point(75, 26)
+  };
 
-function mapInit() {
-  var map = new google.maps.Map($('#map').get(0), {
-    center: {lat: 59.932, lng: 30.348},
-    zoom: 12,
-    // disableDefaultUI: true,
-    scrollwheel: false,
-  });
-
-  var markers = [];
-
-  points.forEach(function (position, i) {
-    markers.push(new google.maps.Marker({
-      position: position,
+  for (var i = 0; i < points.length; i++) {
+    var point = points[i];
+    var marker = new google.maps.Marker({
+      position: {lat: point[1], lng: point[2]},
       map: map,
-    }));
-  });
-};
-
-});
+      icon: image,
+      title: point[0]
+    });
+  }
+}
